@@ -21,7 +21,6 @@ spec:
 
 def render(name):
     template = jinja2.Template(svc)
-    app = template.render(name=name)
-    return app
+    return template.render(name=name)
 
 print(render("foobar"))
